@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App4.CreateAnAccount">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Create An Account"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <Entry x:Name="emailEntry"
+                Placeholder="Email Address"
+                HorizontalTextAlignment="Center"/>
+
+            <Entry x:Name="retypeEmailEntry"
+                Placeholder="Retype Email Address"
+                HorizontalTextAlignment="Center"/>
+
+            <Entry x:Name="passwordEntry"
+                IsPassword="True"
+                Placeholder="Create Password"
+                HorizontalTextAlignment="Center"/>
+
+            <Entry x:Name="retypePasswordEntry"
+                IsPassword="True"
+                Placeholder="Retype Password"
+                HorizontalTextAlignment="Center"/>
+
+            <Entry x:Name="firstNameEntry"
+                Placeholder="First Name"
+                HorizontalTextAlignment="Center"/>
+
+            <Entry x:Name="lastNameEntry"
+                Placeholder="Last Name"
+                HorizontalTextAlignment="Center"/>
+
+            <Button x:Name="createButton"
+               Text="Create Account"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               TextColor="Red"
+               FontAttributes="Bold"
+               Clicked="CreateButtonClicked"   
+               />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
